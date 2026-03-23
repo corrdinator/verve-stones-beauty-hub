@@ -1,7 +1,5 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { ShoppingBag, Menu, X } from "lucide-react";
-import { useCart } from "@/context/CartContext";
 import { motion, AnimatePresence } from "framer-motion";
 
 const navLinks = [
@@ -13,7 +11,6 @@ const navLinks = [
 ];
 
 const Navbar = () => {
-  const { totalItems } = useCart();
   const [mobileOpen, setMobileOpen] = useState(false);
   const location = useLocation();
 
@@ -40,14 +37,7 @@ const Navbar = () => {
         </div>
 
         <div className="flex items-center gap-4">
-          <Link to="/cart" className="relative">
-            <ShoppingBag className="w-5 h-5 text-foreground" />
-            {totalItems > 0 && (
-              <span className="absolute -top-2 -right-2 w-5 h-5 rounded-full bg-accent text-accent-foreground text-xs flex items-center justify-center font-medium">
-                {totalItems}
-              </span>
-            )}
-          </Link>
+          
           <button className="md:hidden" onClick={() => setMobileOpen(!mobileOpen)}>
             {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
           </button>
