@@ -35,7 +35,7 @@ const Cart = () => {
                 <img src={item.image} alt={item.name} className="w-20 h-20 rounded-lg object-cover" />
                 <div className="flex-1">
                   <h3 className="font-display text-lg font-semibold">{item.name}</h3>
-                  <p className="text-sm text-muted-foreground">${item.price.toFixed(2)}</p>
+                  <p className="text-sm text-muted-foreground">R{item.price.toFixed(2)}</p>
                 </div>
                 <div className="flex items-center gap-2">
                   <button onClick={() => updateQuantity(item.id, item.quantity - 1)} className="w-8 h-8 rounded-full bg-muted flex items-center justify-center">
