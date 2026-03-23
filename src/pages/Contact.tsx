@@ -92,6 +92,16 @@ const Contact = () => {
               </button>
             </motion.form>
           </div>
+          <div style={{ marginTop: "30px" }}>
+  <h3>Contact Us</h3>
+
+  <p>📞 Phone: +27 63 540 1316</p>
+  <p>📧 Email: info@vervestonesb@mail.com</p>
+
+  <a href="https://wa.me/27635401316" target="_blank">
+    💬 Chat with us on WhatsApp
+  </a>
+</div>
         </div>
       </section>
     </div>
