@@ -30,9 +30,9 @@ const Contact = () => {
               </p>
               <div className="flex flex-col gap-6">
                 {[
-                  { icon: Mail, label: "Email", value: "hello@vervestones.com" },
-                  { icon: Phone, label: "Phone", value: "+1 (555) 123-4567" },
-                  { icon: MessageCircle, label: "WhatsApp", value: "+1 (555) 123-4567" },
+                  { icon: Mail, label: "Email", value: "vervestonesb@mail.com" },
+                  { icon: Phone, label: "Phone", value: "+27 63 540 1316" },
+                  { icon: MessageCircle, label: "WhatsApp", value: "+27 63 540 1316" },
                 ].map((c, i) => (
                   <div key={i} className="flex items-center gap-4">
                     <div className="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0">
@@ -92,16 +92,6 @@ const Contact = () => {
               </button>
             </motion.form>
           </div>
-          <div style={{ marginTop: "30px" }}>
-  <h3>Contact Us</h3>
-
-  <p>📞 Phone: +27 63 540 1316</p>
-  <p>📧 Email: info@vervestonesb@mail.com</p>
-
-  <a href="https://wa.me/27635401316" target="_blank">
-    💬 Chat with us on WhatsApp
-  </a>
-</div>
         </div>
       </section>
     </div>
