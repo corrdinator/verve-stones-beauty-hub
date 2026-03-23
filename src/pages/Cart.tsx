@@ -46,7 +46,7 @@ const Cart = () => {
                     <Plus className="w-3 h-3" />
                   </button>
                 </div>
-                <p className="font-medium w-20 text-right">${(item.price * item.quantity).toFixed(2)}</p>
+                <p className="font-medium w-20 text-right">R{(item.price * item.quantity).toFixed(2)}</p>
                 <button onClick={() => removeItem(item.id)} className="text-muted-foreground hover:text-destructive transition-colors">
                   <Trash2 className="w-4 h-4" />
                 </button>
@@ -57,7 +57,7 @@ const Cart = () => {
           <div className="mt-8 glass-card p-6 flex flex-col sm:flex-row items-center justify-between gap-4">
             <div>
               <p className="text-sm text-muted-foreground">Total</p>
-              <p className="font-display text-3xl font-bold">${totalPrice.toFixed(2)}</p>
+              <p className="font-display text-3xl font-bold">R{totalPrice.toFixed(2)}</p>
             </div>
             <div className="flex gap-3">
               <button onClick={() => { clearCart(); toast.info("Cart cleared"); }} className="btn-outline-dark text-sm px-6">
