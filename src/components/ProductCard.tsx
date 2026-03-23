@@ -33,7 +33,7 @@ const ProductCard = ({ product }: { product: Product }) => {
 )}
 
 <a
-  href={`https://wa.me/27635401316?text=Hi, I'm interested in R{product.name} Price: R{product.price}`}
+  href={`https://wa.me/27635401316?text=Hi, I'm interested in R{product.name} Price: R${product.price}`}
   target="_blank"
   className="absolute bottom-3 right-3 w-10 h-10 rounded-full bg-green-500 flex items-center justify-center"
 >
