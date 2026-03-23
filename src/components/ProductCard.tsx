@@ -42,7 +42,7 @@ const ProductCard = ({ product }: { product: Product }) => {
         <p className="text-xs text-muted-foreground tracking-wider uppercase mb-1">{product.category}</p>
         <h3 className="font-display text-lg font-semibold">{product.name}</h3>
         <p className="text-sm text-muted-foreground mt-1 line-clamp-2">{product.description}</p>
-        <p className="mt-3 font-medium text-accent">${product.price.toFixed(2)}</p>
+        <p className="mt-3 font-medium text-accent">R{product.price.toFixed(2)}</p>
       </div>
     </motion.div>
   );
