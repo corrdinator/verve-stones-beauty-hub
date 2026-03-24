@@ -1,21 +1,17 @@
 import { motion } from "framer-motion";
 import { Tag, ArrowRight } from "lucide-react";
 import { comboOffers } from "@/data/products";
-import { useCart } from "@/context/CartContext";
 import { products } from "@/data/products";
 import { toast } from "sonner";
 
 const Deals = () => {
-  const { addItem } = useCart();
 
   const handleAddCombo = (combo: typeof comboOffers[0]) => {
     // Add first matching product for each combo item
     combo.products.forEach((name) => {
       const product = products.find((p) => p.name === name);
-      if (product) addItem(product);
+    
     });
-    toast.success(`${combo.name} added to cart!`);
-  };
 
   return (
     <div className="min-h-screen pt-24">
