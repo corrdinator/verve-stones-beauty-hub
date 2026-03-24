@@ -24,9 +24,9 @@ const Footer = () => (
         <div>
           <h4 className="font-medium mb-4 text-sm tracking-wider uppercase">Contact</h4>
           <div className="flex flex-col gap-2 text-sm opacity-70">
-            <span>hello@vervestones.com</span>
-            <span>+1 (555) 123-4567</span>
-            <span>WhatsApp: +1 (555) 123-4567</span>
+            <span>hello@vervestonesb@gmail.com</span>
+            <span>+27 63 540 1316</span>
+            <span>WhatsApp: +27 63 540 1316</span>
           </div>
         </div>
         <div>
