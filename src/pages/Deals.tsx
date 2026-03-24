@@ -1,8 +1,6 @@
 import { motion } from "framer-motion";
 import { Tag, ArrowRight } from "lucide-react";
 import { comboOffers } from "@/data/products";
-import { products } from "@/data/products";
-import { toast } from "sonner";
 
 const Deals = () => {
 
