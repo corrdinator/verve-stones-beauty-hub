@@ -14,7 +14,7 @@ const Deals = () => {
       const product = products.find((p) => p.name === name);
       if (product) addItem(product);
     });
-    toast.success(`R{combo.name} added to cart!`);
+    toast.success(`${combo.name} added to cart!`);
   };
 
   return (
