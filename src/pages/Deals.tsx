@@ -14,7 +14,7 @@ const Deals = () => {
       const product = products.find((p) => p.name === name);
       if (product) addItem(product);
     });
-    toast.success(`${combo.name} added to cart!`);
+    toast.success(`R{combo.name} added to cart!`);
   };
 
   return (
@@ -41,7 +41,7 @@ const Deals = () => {
               >
                 <div className="absolute top-4 right-4 bg-accent text-accent-foreground text-xs font-bold px-3 py-1 rounded-full flex items-center gap-1">
                   <Tag className="w-3 h-3" />
-                  Save ${(combo.originalPrice - combo.comboPrice).toFixed(2)}
+                  Save R{(combo.originalPrice - combo.comboPrice).toFixed(2)}
                 </div>
                 <h3 className="font-display text-2xl font-semibold mb-2">{combo.name}</h3>
                 <p className="text-muted-foreground text-sm mb-4">{combo.description}</p>
@@ -52,8 +52,8 @@ const Deals = () => {
                 </ul>
                 <div className="flex items-center justify-between">
                   <div>
-                    <span className="text-muted-foreground line-through text-sm mr-2">${combo.originalPrice.toFixed(2)}</span>
-                    <span className="text-2xl font-display font-bold text-accent">${combo.comboPrice.toFixed(2)}</span>
+                    <span className="text-muted-foreground line-through text-sm mr-2">R{combo.originalPrice.toFixed(2)}</span>
+                    <span className="text-2xl font-display font-bold text-accent">R{combo.comboPrice.toFixed(2)}</span>
                   </div>
                   <button
                     onClick={() => handleAddCombo(combo)}
