@@ -7,11 +7,12 @@ import { toast } from "sonner";
 const Deals = () => {
 
   const handleAddCombo = (combo: typeof comboOffers[0]) => {
-    // Add first matching product for each combo item
-    combo.products.forEach((name) => {
-      const product = products.find((p) => p.name === name);
-    
-    });
+  const message = `Hi, I want to order the ${combo.name} bundle for R${combo.comboPrice}`;
+  const phone = "27635401316";
+  const url = `https://wa.me/R{phone}?text=R{encodeURIComponent(message)}`;
+
+  window.open(url, "_blank");
+};
 
   return (
     <div className="min-h-screen pt-24">
