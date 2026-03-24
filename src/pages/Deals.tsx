@@ -7,7 +7,7 @@ const Deals = () => {
   const handleAddCombo = (combo: typeof comboOffers[0]) => {
   const message = `Hi, I want to order the ${combo.name} bundle for R${combo.comboPrice}`;
   const phone = "27635401316";
-  const url = `https://wa.me/R{phone}?text=R{encodeURIComponent(message)}`;
+  const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 
   window.open(url, "_blank");
 };
